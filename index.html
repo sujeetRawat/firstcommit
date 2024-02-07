@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <h1 id="title">Expense Tracker Application </h1>
+    <form onsubmit="handleForm(event)"> 
+        <label for="expense">Choose Expense amount:</label><input id="expense" type="number" placeholder="$$$$">
+        <label for="description"> Type Description:</label><input id="description" type="text" placeholder="anything">
+        <label for="category">Choose Category:</label>
+        <select id="category">
+          <option class="option">Select</option>
+          <option class="option">petrol</option>
+          <option class="option">movie</option>
+          <option class="option">food</option>
+          <option class="option">Bill</option>
+        </select>
+        <input type="submit" value="Add Expense">
+      
+      <ul id="userList"></ul>
+    </form>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
